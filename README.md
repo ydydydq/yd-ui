@@ -28,3 +28,17 @@ npm run serve
 ```
 npm run build
 ```
+
+
+## commit规范
+- feat：新功能
+- fix：修复 bug
+- docs：文档修改
+- style：格式(不影响代码运行的变动)
+- refactor：重构
+- perf：提高性能
+- test：添加缺失测试或更正现有测试
+- build：依赖的外部资源变化
+- chore：构建过程或辅助工具的变动
+- revert：恢复先前的提交
+- update：更新(原来存在的东西更改，不影响结果)
