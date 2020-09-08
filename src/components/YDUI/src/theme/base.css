@@ -1,0 +1,225 @@
+.yd-loading-parent--hidden{
+    position: relative;
+    overflow: hidden;
+}
+.yd-loading-parent--relative{
+    position: relative !important;
+}
+
+.collapse-transition {
+    transition: 0.3s height ease-in-out, 0.3s padding-top ease-in-out, 0.3s padding-bottom ease-in-out;
+}
+
+/*flex:
+    h: 水平方向(horizontal)
+    v: 垂直方向(vertical)
+    L: left
+    R: right
+    U: up
+    D: down
+    C: center
+*/
+
+/* 溢出省略 *//*盒子*/
+.yd-flex {
+    display: -webkit-box; /* Safari,iOS,Android browser,older WebKit browsers. */
+    display: -ms-flexbox;  /* IE10 */
+    display: -moz-box; /* Firefox(buggy) */
+    display: -webkit-flex; /* Chrome21+ */
+    display: flex; /* 子元素的float,clear,vertical-align属性将失效 */
+}
+.yd-flex-direction-hL {
+    -ms-flex-direction: row;
+    -moz-flex-direction: row;
+    -o-flex-direction: row;
+    -webkit-flex-direction: row;
+    flex-direction: row;
+}
+.yd-flex-direction-hR {
+    -webkit-flex-direction: row-reverse;
+    -moz-flex-direction: row-reverse;
+    -ms-flex-direction: row-reverse;
+    -o-flex-direction: row-reverse;
+    flex-direction: row-reverse;
+}
+.yd-flex-direction-vU {
+    -moz-flex-direction: column;
+    -ms-flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -o-flex-direction: column;
+    flex-direction: column;
+}
+.yd-flex-direction-vD {
+    -webkit-flex-direction: column-reverse;
+    -moz-flex-direction: column-reverse;
+    -ms-flex-direction: column-reverse;
+    flex-direction: column-reverse;
+    flex-direction: column-reverse;
+}
+.yd-flex-wrap {
+    -webkit-box-lines: multiple;
+    -webkit-flex-wrap: wrap;
+    -moz-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    -o-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+.yd-flex-hL {
+    -webkit-justify-content: flex-start;
+    -moz-justify-content: flex-start;
+    -ms-justify-content: flex-start;
+    justify-content: flex-start
+}
+.yd-flex-hR {
+    -webkit-justify-content: flex-end;
+    -moz-justify-content: flex-end;
+    -ms-justify-content: flex-end;
+    justify-content: flex-end;
+}
+.yd-flex-hC {
+    -webkit-justify-content: center;
+    -moz-justify-content: center;
+    -ms-justify-content: center;
+    -o-justify-content: center;
+    justify-content: center;
+}
+.yd-flex-hS {
+    -webkit-justify-content: space-between;
+    -moz-justify-content: space-between;
+    -ms-justify-content: space-between;
+    justify-content: space-between;
+}
+.yd-flex-vU {
+    -webkit-align-items: flex-start;
+    -moz-align-items: flex-start;
+    -ms-align-items: flex-start;
+    align-items: flex-start;
+}
+.yd-flex-vD {
+    -webkit-align-items: flex-end;
+    -moz-align-items: flex-end;
+    -ms-align-items: flex-end;
+    align-items: flex-end;
+}
+.yd-flex-vC {
+    -webkit-align-items: center;
+    -moz-align-items: center;
+    -ms-align-items: center;
+    align-items: center;
+}
+/*flex为flex-grow,flex-shrink,flex-basis缩写*/
+.yd-flex-1 {-webkit-box-flex: 1;-moz-box-flex: 1;-webkit-flex: 1;-ms-flex: 1 1 auto;flex: 1;overflow: hidden} /*不会造成其他元素的挤压*/
+.yd-flex-2 {-webkit-box-flex: 2;-moz-box-flex: 2;-webkit-flex: 2;-ms-flex: 2 2 auto;flex: 2;}
+.yd-flex-3 {-webkit-box-flex: 3;-moz-box-flex: 3;-webkit-flex: 3;-ms-flex: 3 3 auto;flex: 3;}
+.yd-flex-4 {-webkit-box-flex: 4;-moz-box-flex: 4;-webkit-flex: 4;-ms-flex: 4 4 auto;flex: 4;}
+.yd-flex-5 {-webkit-box-flex: 5;-moz-box-flex: 5;-webkit-flex: 5;-ms-flex: 5 6 auto;flex: 5;}
+.yd-flex-self-start {-webkit-align-self: flex-start;-moz-align-self: flex-start;-ms-align-self: flex-start;align-self: flex-start;}
+.yd-flex-self-end {-webkit-align-self: flex-end;-moz-align-self: flex-end;-ms-align-self: flex-end;align-self: flex-end;}
+.yd-flex-self-center {-webkit-box-align:center;-webkit-align-self: center;-moz-align-self: center;-ms-align-self: center;align-self: center;}
+/*综合*/
+.yd-flex-h-hL-vC { /*水平排列;水平左靠齐;垂直居中*/
+    display: -webkit-box;display: -moz-box;display: -ms-flexbox;display: -webkit-flex;display: flex;
+    -webkit-align-items: center;-moz-align-items: center;-ms-align-items: center;align-items: center;
+}
+.yd-flex-h-hC-vC { /*水平排列;水平居中;垂直居中*/
+    display: -webkit-box;display: -moz-box;display: -ms-flexbox;display: -webkit-flex;display: flex;
+    -webkit-justify-content: center;-moz-justify-content: center;-ms-justify-content: center;-o-justify-content: center;justify-content: center;
+    -webkit-align-items: center;-moz-align-items: center;-ms-align-items: center;align-items: center;
+}
+.yd-flex-h-hR-vC { /*水平排列;水平右靠齐;垂直居中*/
+    display: -webkit-box;display: -moz-box;display: -ms-flexbox;display: -webkit-flex;display: flex;
+    -webkit-justify-content: flex-end;-moz-justify-content: flex-end;-ms-justify-content: flex-end;justify-content: flex-end;
+    -webkit-align-items: center;-moz-align-items: center;-ms-align-items: center;align-items: center;
+}
+.yd-flex-h-hC-vU { /*水平排列;水平居中;垂直向上*/
+    display: -webkit-box;display: -moz-box;display: -ms-flexbox;display: -webkit-flex;display: flex;
+    -webkit-justify-content: center;-moz-justify-content: center;-ms-justify-content: center;-o-justify-content: center;justify-content: center;
+    -webkit-align-items: flex-start;-moz-align-items: flex-start;-ms-align-items: flex-start;align-items: flex-start;
+}
+.yd-flex-h-hC-vD { /*水平排列;水平居中;垂直向下*/
+    display: -webkit-box;display: -moz-box;display: -ms-flexbox;display: -webkit-flex;display: flex;
+    -webkit-justify-content: center;-moz-justify-content: center;-ms-justify-content: center;-o-justify-content: center;justify-content: center;
+    -webkit-align-items: flex-end;-moz-align-items: flex-end;-ms-align-items: flex-end;align-items: flex-end;
+}
+.yd-flex-h-hS-vU { /*水平排列;两边对齐;垂直向上*/
+    display: -webkit-box;display: -moz-box;display: -ms-flexbox;display: -webkit-flex;display: flex;
+    -webkit-justify-content: space-between;-moz-justify-content: space-between;-ms-justify-content: space-between;justify-content: space-between;
+    -webkit-align-items: flex-start;-moz-align-items: flex-start;-ms-align-items: flex-start;align-items: flex-start;
+}
+.yd-flex-h-hS-vC{ /*水平排列;两边对齐;垂直居中*/
+    display: -webkit-box;display: -moz-box;display: -ms-flexbox;display: -webkit-flex;display: flex;
+    -webkit-justify-content: space-between;-moz-justify-content: space-between;-ms-justify-content: space-between;justify-content: space-between;
+    -webkit-align-items: center;-moz-align-items: center;-ms-align-items: center;align-items: center;
+}
+.yd-flex-h-hS-vD{ /*水平排列;两边对齐;垂直底下*/
+    display: -webkit-box;display: -moz-box;display: -ms-flexbox;display: -webkit-flex;display: flex;
+    -webkit-justify-content: space-between;-moz-justify-content: space-between;-ms-justify-content: space-between;justify-content: space-between;
+    -webkit-align-items: flex-end;-moz-align-items: flex-end;-ms-align-items: flex-end;align-items: flex-end;
+}
+.yd-flex-v{ /*垂直排列*/
+    display: -webkit-box;display: -moz-box;display: -ms-flexbox;display: -webkit-flex;display: flex;
+    -webkit-box-orient: vertical;-webkit-flex-direction: column;-moz-flex-direction: column;-ms-flex-direction: column;-o-flex-direction: column;flex-direction: column;
+}
+.yd-flex-v-hL-vC{ /*垂直排列;水平左靠齐;垂直居中*/
+    display: -webkit-box;display: -moz-box;display: -ms-flexbox;display: -webkit-flex;display: flex;
+    -webkit-box-orient: vertical;-webkit-flex-direction: column;-moz-flex-direction: column;-ms-flex-direction: column;-o-flex-direction: column;flex-direction: column;
+    -webkit-justify-content: center;-moz-justify-content: center;-ms-justify-content: center;-o-justify-content: center;justify-content: center;
+}
+.yd-flex-v-hC-vC{ /*垂直排列;水平居中;垂直居中*/
+    display: -webkit-box;display: -moz-box;display: -ms-flexbox;display: -webkit-flex;display: flex;
+    -webkit-box-orient: vertical;-webkit-flex-direction: column;-moz-flex-direction: column;-ms-flex-direction: column;-o-flex-direction: column;flex-direction: column;
+    -webkit-justify-content: center;-moz-justify-content: center;-ms-justify-content: center;-o-justify-content: center;justify-content: center;
+    -webkit-align-items: center;-moz-align-items: center;-ms-align-items: center;align-items: center;
+}
+.yd-flex-v-hR-vC{ /*垂直排列;水平右靠齐;垂直居中*/
+    display: -webkit-box;display: -moz-box;display: -ms-flexbox;display: -webkit-flex;display: flex;
+    -webkit-box-orient: vertical;-webkit-flex-direction: column;-moz-flex-direction: column;-ms-flex-direction: column;-o-flex-direction: column;flex-direction: column;
+    -webkit-align-items: flex-end;-moz-align-items: flex-end;-ms-align-items: flex-end;align-items: flex-end;
+    -webkit-justify-content: center;-moz-justify-content: center;-ms-justify-content: center;-o-justify-content: center;justify-content: center;
+}
+.yd-flex-v-hC-vU { /*垂直排列;水平居中;垂直向上*/
+    display: -webkit-box;display: -moz-box;display: -ms-flexbox;display: -webkit-flex;display: flex;
+    -webkit-box-orient: vertical;-webkit-flex-direction: column;-moz-flex-direction: column;-ms-flex-direction: column;-o-flex-direction: column;flex-direction: column;
+    -webkit-align-items: center;-moz-align-items: center;-ms-align-items: center;align-items: center;
+}
+.yd-flex-v-hL-vU{ /*垂直排列;水平左靠齐;垂直向上*/
+    display: -webkit-box;display: -moz-box;display: -ms-flexbox;display: -webkit-flex;display: flex;
+    -webkit-box-orient: vertical;-webkit-flex-direction: column;-moz-flex-direction: column;-ms-flex-direction: column;-o-flex-direction: column;flex-direction: column;
+    -webkit-align-items: flex-start;-moz-align-items: flex-start;-ms-align-items: flex-start;align-items: flex-start;
+}
+.yd-flex-v-hR-vU{ /*垂直排列;水平右靠齐;垂直向上*/
+    display: -webkit-box;display: -moz-box;display: -ms-flexbox;display: -webkit-flex;display: flex;
+    -webkit-box-orient: vertical;-webkit-flex-direction: column;-moz-flex-direction: column;-ms-flex-direction: column;-o-flex-direction: column;flex-direction: column;
+    -webkit-align-items: flex-end;-moz-align-items: flex-end;-ms-align-items: flex-end;align-items: flex-end;
+}
+.yd-flex-v-hL-vS{ /*垂直排列;水平左靠齐;两端对齐*/
+    display: -webkit-box;display: -moz-box;display: -ms-flexbox;display: -webkit-flex;display: flex;
+    -webkit-box-orient: vertical;-webkit-flex-direction: column;-moz-flex-direction: column;-ms-flex-direction: column;-o-flex-direction: column;flex-direction: column;
+    -webkit-justify-content: space-between;-moz-justify-content: space-between;-ms-justify-content: space-between;justify-content: space-between;
+}
+.yd-clamp-1 {overflow: hidden;text-overflow: ellipsis;white-space: nowrap;}
+.yd-clamp-2 {display: -webkit-box;display: -moz-box;display: -ms-flexbox;overflow: hidden;text-overflow: ellipsis;word-break: break-all;-webkit-line-clamp: 2;
+    /* autoprefixer: ignore next */
+    -webkit-box-orient: vertical;
+}
+.yd-clamp-3 {display: -webkit-box;display: -moz-box;display: -ms-flexbox;overflow: hidden;text-overflow: ellipsis;word-break: break-all;-webkit-line-clamp: 3;
+    /* autoprefixer: ignore next */
+    -webkit-box-orient: vertical;
+}
+.yd-clamp-4 {display: -webkit-box;display: -moz-box;display: -ms-flexbox;overflow: hidden;text-overflow: ellipsis;word-break: break-all;-webkit-line-clamp: 4;
+    /* autoprefixer: ignore next */
+    -webkit-box-orient: vertical;
+}
+.yd-clamp-5 {display: -webkit-box;display: -moz-box;display: -ms-flexbox;overflow: hidden;text-overflow: ellipsis;word-break: break-all;-webkit-line-clamp: 5;
+    /* autoprefixer: ignore next */
+    -webkit-box-orient: vertical;
+}
+/* 提示语样式 */
+::-webkit-input-placeholder {color: #D1D1D1;line-height: 1.3em}
+/* 使用webkit内核的浏览器 */
+:-moz-placeholder {color: #D1D1D1;}
+/* Firefox版本4-18 */
+::-moz-placeholder {color: #D1D1D1;}
+/* Firefox版本19+ */
+:-ms-input-placeholder {color: #D1D1D1;}
