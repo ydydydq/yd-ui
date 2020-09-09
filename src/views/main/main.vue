@@ -29,7 +29,7 @@
           {title: '日期', path: '/main/icon1'},
           {title: '时间', path: '/main/icon1'},
           {title: '分页', path: '/main/pagination'},
-          {title: '轮播', path: '/main/icon1'},
+          {title: '轮播banner', path: '/main/icon1'},
           {title: '折叠面板', path: '/main/collapse'},
           {title: '抽屉', path: '/main/icon1'},
           {title: '加载层-Loading', path: '/main/loading'},
