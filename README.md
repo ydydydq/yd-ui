@@ -2,7 +2,7 @@
 组件组件库，高仿ElementUI，现有十几个组件已开发完成，还在持续开发中。。。
 [项目预览](http://blog.ydydydq.cn/ydui/)
 
-![项目主页](http://blog.ydydydq.cn/images/ydui-view-image.png)
+![项目主页](http://blog.ydydydq.cn/github/images/blog/ydui-view-image.png)
 
 ## 拉取项目
 ```
