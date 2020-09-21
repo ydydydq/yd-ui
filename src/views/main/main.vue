@@ -30,7 +30,7 @@ export default {
         { title: "评分", path: "/main/rate" },
         { title: "标记", path: "/main/badge" },
         { title: "下拉选择器", path: "/main/select" },
-        { title: "日期", path: "/main/icon1" },
+        { title: "日期", path: "/main/calendar" },
         { title: "时间", path: "/main/icon1" },
         { title: "分页", path: "/main/pagination" },
         { title: "轮播", path: "/main/icon1" },

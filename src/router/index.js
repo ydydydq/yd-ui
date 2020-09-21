@@ -56,6 +56,11 @@ const routes = [
         component: () => import(/* webpackChunkName: "select" */ '@/views/select/select.vue')
       },
       {
+        path: '/main/calendar',
+        name: 'Calendar',
+        component: () => import(/* webpackChunkName: "calendar" */ '@/views/calendar/calendar.vue')
+      },
+      {
         path: '/main/pagination',
         name: 'Pagination',
         component: () => import(/* webpackChunkName: "pagination" */ '@/views/pagination/pagination.vue')
