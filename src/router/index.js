@@ -102,12 +102,7 @@ const routes = [{
         path: '/main/backtop',
         name: 'Backtop',
         component: () => import( /* webpackChunkName: "backtop" */ '@/views/backtop/backtop.vue')
-      },
-      {
-        path: '/main/calendar',
-        name: 'calendar',
-        component: () => import( /* webpackChunkName: "calendar" */ '@/views/calendar/calendar.vue')
-      },
+      }
     ]
   },
   // 匹配所以错误页面
