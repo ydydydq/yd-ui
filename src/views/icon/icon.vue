@@ -78,6 +78,9 @@
         <yd-icon @click="handleEvent('video')" icon-class="video" class="icon" />
         <yd-icon @click="handleEvent('wifi')" icon-class="wifi" class="icon" />
         <yd-icon @click="handleEvent('woman')" icon-class="woman" class="icon" />
+        <yd-icon @click="handleEvent('zoomin')" icon-class="zoomin" class="icon" />
+        <yd-icon @click="handleEvent('zoomout')" icon-class="zoomout" class="icon" />
+        <yd-icon @click="handleEvent('expend')" icon-class="expend" class="icon" />
     </div>
 </template>
 
