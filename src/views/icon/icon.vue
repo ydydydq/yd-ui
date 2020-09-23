@@ -81,6 +81,7 @@
         <yd-icon @click="handleEvent('zoomin')" icon-class="zoomin" class="icon" />
         <yd-icon @click="handleEvent('zoomout')" icon-class="zoomout" class="icon" />
         <yd-icon @click="handleEvent('expend')" icon-class="expend" class="icon" />
+        <yd-icon @click="handleEvent('scale')" icon-class="scale" class="icon" />
     </div>
 </template>
 
