@@ -41,3 +41,28 @@ export const isEmpty = function(val) {
 
   return false;
 };
+
+/**
+ * 判断是否是火狐
+ * @returns {boolean}
+ */
+export const isFirefox = function() {
+  return !!window.navigator.userAgent.match(/firefox/i);
+};
+
+/**
+ *
+ * @param fn
+ * @returns {Function}
+ */
+export function rafThrottle(fn) {
+  let locked = false;
+  return function(...args) {
+    if (locked) return;
+    locked = true;
+    window.requestAnimationFrame(_ => {
+      fn.apply(this, args);
+      locked = false;
+    });
+  };
+}

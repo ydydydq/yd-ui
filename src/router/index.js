@@ -94,6 +94,11 @@ const routes = [{
         component: () => import( /* webpackChunkName: "popover" */ '@/views/popover/popover.vue')
       },
       {
+        path: '/main/image',
+        name: 'Image',
+        component: () => import( /* webpackChunkName: "image" */ '@/views/image/image.vue')
+      },
+      {
         path: '/main/empty',
         name: 'Empty',
         component: () => import( /* webpackChunkName: "empty" */ '@/views/empty/empty.vue')

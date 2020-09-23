@@ -19,13 +19,14 @@ import YdMessage from './packages/Message';
 import YdConfirm from './packages/Confirm';
 import YdDialog from './packages/Dialog';
 import YdPopover from './packages/Popover';
+import YdImage from './packages/Image';
 import YdEmpty from './packages/Empty';
 import YdBacktop from './packages/Backtop';
 import YdCollapseTransition from './src/transitions/collapse-transition';
 
 const components = [
   YdIcon, YdButton, YdRadio, YdCheckbox, YdCheckboxGroup, YdInput, YdSwitch, YdRate, YdBadge,
-  YdSelect, YdSelectOption, YdPagination, YdCollapse, YdCollapseItem, YdDialog, YdPopover,
+  YdSelect, YdSelectOption, YdPagination, YdCollapse, YdCollapseItem, YdDialog, YdPopover, YdImage,
   YdEmpty, YdBacktop, YdCollapseTransition
 ];
 
@@ -64,6 +65,7 @@ export default {
   YdConfirm,
   YdDialog,
   YdPopover,
+  YdImage,
   YdEmpty,
   YdBacktop,
   YdCollapseTransition

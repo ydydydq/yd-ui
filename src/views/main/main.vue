@@ -44,6 +44,7 @@ export default {
         { title: "对话框-Dialog", path: "/main/dialog" },
         { title: "文字提示-Tooltip", path: "/main/icon1" },
         { title: "自定义提示-Popover", path: "/main/popover" },
+        { title: "图片-Image", path: "/main/image" },
         { title: "空布局-Empty", path: "/main/empty" },
         { title: "返回顶部", path: "/main/backtop" },
       ],
