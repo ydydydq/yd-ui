@@ -8,8 +8,7 @@
                     <yd-image
                             style="width: 100px; height: 100px;"
                             :src="url"
-                            :fit="fit"
-                            :preview-src-list="srcList"></yd-image>
+                            :fit="fit"></yd-image>
                 </div>
             </div>
         </div>
