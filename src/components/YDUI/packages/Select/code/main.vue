@@ -5,9 +5,9 @@
              :class="{'actived': visible && isOutline}"
              :style="styles"
              class="yd-select__box yd-flex-h-hS-vC">
-            <div :title="selectedLabel" :class="{'yd-select__text--gray': !selectedLabel }"
+            <div :title="selectedLabel" :class="{'yd-select__text--gray': selectedLabel === '' }"
                  class="yd-select__text yd-flex-1 yd-clamp-1">
-                {{selectedLabel ? selectedLabel : placeholder}}
+                {{selectedLabel !== '' ? selectedLabel : placeholder}}
             </div>
             <b :class="{'actived': visible}" class="yd-select__arrow"></b>
         </div>
@@ -154,7 +154,7 @@
       },
       // 主要处理初次绑定回显及提供给watch中解决异步初次绑定
       setSelected() {
-        if(isEmpty(this.value)) {
+        if(isEmpty(this.value) && this.value !== 0) {
           this.selectedLabel = '';
           return
         };
@@ -171,7 +171,7 @@
         this.$forceUpdate();
       },
       getOption(value) {
-        if(!value) return;
+        if(!value && value !== 0) return;
         if(this.multiple) {
           if(typeof value !== 'object') return;
           let result = [];
@@ -188,7 +188,7 @@
             label: ''
           };
           this.options.forEach(node => {
-            if(value == node.currentValue) {
+            if(value === node.currentValue) {
               result.label = node.currentLabel
             }
           });

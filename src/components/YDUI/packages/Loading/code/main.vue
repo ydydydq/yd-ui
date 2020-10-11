@@ -108,6 +108,8 @@
         -webkit-background-clip: text;
     }
     .yd-loading__circular {
+        position: relative;
+        top: 10px;
         height: 50px;
         width: 50px;
         animation: loading-rotate 2s linear infinite;
