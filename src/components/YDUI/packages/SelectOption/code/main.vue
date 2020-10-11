@@ -29,7 +29,7 @@
         return this.label || (this.isObject ? '' : this.value);
       },
       currentValue() {
-        return this.value === 0 ? this.value.toString() : this.value || this.label || '';
+        return this.value === 0 ? 0 : this.value || this.label || '';
       },
       itemSelected() {
         if (this.select.multiple) {

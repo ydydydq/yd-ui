@@ -149,7 +149,7 @@
       this.deviceSupportInstall();
       // focus wrapper so arrow key can't cause inner scroll behavior underneath
       // 没明白能干什么
-      this.$refs['yd-preview'].focus();
+      this.$refs['ydPreview'].focus();
     },
     methods: {
       // 图片载入
